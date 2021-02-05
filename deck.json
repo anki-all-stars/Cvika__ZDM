@@ -6,6 +6,9 @@
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
+            "autoAgain": 0,
+            "autoAlert": 0,
+            "autoAnswer": 0,
             "autoplay": true,
             "crowdanki_uuid": "e457f0d0-5529-11eb-bb95-38d5479d0148",
             "currentValue": 120,
@@ -55,7 +58,7 @@
     ],
     "desc": "",
     "dyn": 0,
-    "extendNew": 10,
+    "extendNew": 20,
     "extendRev": 50,
     "media_files": [
         "paste-008089c44a1d1cd596a0bb7271e6b67a7c1b5bdb.jpg",
@@ -109,7 +112,6 @@
         "paste-1470c66ce99c6e0de352e3c8252af54432704df7.jpg",
         "paste-14e3bca0941a9b75b8b23eaf1e06e45b21da2c09.jpg",
         "paste-15101c8ae3484e3c74bda07d86d6bd592b2717c7.jpg",
-        "paste-151a561b33a611c60be9a6153e4e58e6a9222cbc.jpg",
         "paste-15613b8cf9719838e4ea50080411970e6c03a6e9.jpg",
         "paste-15d1d2d841d7bcbdaab8c0e398947686b4ab0cf8.jpg",
         "paste-15fa5c4a254f344cc35b4f4e66c49a31210bfb32.jpg",
@@ -245,7 +247,6 @@
         "paste-40441574275ff55c3b346e49c5de8a742a5fde2a.jpg",
         "paste-407554f4397b4100a34da07e9e8cecff32d74a21.jpg",
         "paste-409fab4cd581ed6c30eb22f7ba4aa0a9565b569b.jpg",
-        "paste-40db958f4b9040393d55f5569339dcc894fc69e6.jpg",
         "paste-40f04333f88da04a91c7cd8adc625220a00ab063.jpg",
         "paste-41391b27d11296c307c286de37621ff2b3cc7e42.jpg",
         "paste-4187b00532499255021dea1d739d441b90cef1aa.jpg",
@@ -808,7 +809,7 @@
         "paste-ff6d1911f9d0d74bb7f93802726bd8a51c18ed2b.jpg",
         "paste-fff170d3f7cac81eaf96f9df54f79a1dbd5a1597.jpg"
     ],
-    "mid": 1552241799965,
+    "mid": 1610061542753,
     "name": "Cvika::ZDM",
     "note_models": [
         {
@@ -823,7 +824,7 @@
                     "ord": 0,
                     "rtl": false,
                     "size": 20,
-                    "sticky": true
+                    "sticky": false
                 },
                 {
                     "font": "Liberation Sans",
@@ -832,7 +833,7 @@
                     "ord": 1,
                     "rtl": false,
                     "size": 20,
-                    "sticky": true
+                    "sticky": false
                 }
             ],
             "latexPost": "\\end{document}",
@@ -849,9 +850,7 @@
                 ]
             ],
             "sortf": 0,
-            "tags": [
-                "zdm-4-tyden"
-            ],
+            "tags": [],
             "tmpls": [
                 {
                     "afmt": "{{Question}}\n\n<hr id=answer>\n\n<div style=\"text-align: center;\">\n    <div style=\"display: inline-block; text-align: left;\">\n\t\t{{Solution}}\n    </div>\n</div>",
@@ -1856,6 +1855,7 @@
             "guid": "q5_A26kZ;S",
             "note_model_uuid": "e45d90e4-5529-11eb-bb95-38d5479d0148",
             "tags": [
+                "special",
                 "zdm-1-tyden"
             ]
         },
@@ -2534,18 +2534,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "<img src=\"paste-1f494efab8263642896118276d118898fb4d45c4.jpg\"><br><img src=\"paste-40db958f4b9040393d55f5569339dcc894fc69e6.jpg\"><br>",
-                "<img src=\"paste-c712f5a8e4c00aa7af250917b0d42147de738ac1.jpg\"><div><img src=\"paste-151a561b33a611c60be9a6153e4e58e6a9222cbc.jpg\"><br></div>"
-            ],
-            "guid": "JrU/.7UaL<",
-            "note_model_uuid": "e45d90e4-5529-11eb-bb95-38d5479d0148",
-            "tags": [
-                "zdm-3-tyden"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "<img src=\"paste-1f494efab8263642896118276d118898fb4d45c4.jpg\"><br><img src=\"paste-f4d0caa28bbc661231e69be63685a7852961856a.jpg\"><br>",
                 "<img src=\"paste-c712f5a8e4c00aa7af250917b0d42147de738ac1.jpg\"><div><img src=\"paste-d15a0b3b351931fb97a9972f368323aeee90fdbe.jpg\"><br></div>"
             ],
@@ -2642,7 +2630,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<img src=\"paste-180db11fed59d38025fe76e28845b7267d01aaca.jpg\"><img src=\"paste-8a5cd4a3ee2b81cbfd630e6974a7edb6d95a1cc2.jpg\">",
+                "<img src=\"paste-180db11fed59d38025fe76e28845b7267d01aaca.jpg\"><div><img src=\"paste-8a5cd4a3ee2b81cbfd630e6974a7edb6d95a1cc2.jpg\"></div>",
                 "<img src=\"paste-5228f3e9e8b40f00e9dceb3bc6d989ffea0dea1f.jpg\"><div><img src=\"paste-bc2681318642005706aab750772bd214fd24407b.jpg\"><br></div>"
             ],
             "guid": "P?P^RRjR<(",
@@ -2846,8 +2834,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<img src=\"paste-c421e17e8895d17a77914754a0ddc5c21e03413e.jpg\"><div><img src=\"paste-0a2ca66992ea0d689e8aeabb1a8822159915109f.jpg\"><br></div>",
-                "<div><img src=\"paste-c34f0e39ada9e8aff6630fb0b736bf3cf46a47bc.jpg\"><br></div><div><img src=\"paste-bd5d2066800797b983e3c255946d9cfecea0dfa3.jpg\"><br></div>"
+                "<img src=\"paste-c421e17e8895d17a77914754a0ddc5c21e03413e.jpg\"><div><img src=\"paste-bd5d2066800797b983e3c255946d9cfecea0dfa3.jpg\"><br></div>",
+                "<div><img src=\"paste-c34f0e39ada9e8aff6630fb0b736bf3cf46a47bc.jpg\"><br></div><div><img src=\"paste-0a2ca66992ea0d689e8aeabb1a8822159915109f.jpg\"><br></div>"
             ],
             "guid": "FHpm5}r6[F",
             "note_model_uuid": "e45d90e4-5529-11eb-bb95-38d5479d0148",
